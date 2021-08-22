@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent none
   stages {
     stage('evaluacion2') {
       agent any
@@ -7,7 +7,7 @@ pipeline {
         hdnano = 'hdnano'
       }
       steps {
-        git(url: 'https://github.com/hdnano/login.git', branch: 'master', changelog: true)
+        git 'https://github.com/hdnano/login.git'
       }
     }
 

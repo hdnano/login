@@ -7,7 +7,7 @@ pipeline {
         hdnano = 'hdnano'
       }
       steps {
-        git 'https://github.com/hdnano/login.git'
+        git(url: 'https://github.com/hdnano/login.git', changelog: true, poll: true)
       }
     }
 

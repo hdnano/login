@@ -1,13 +1,9 @@
 pipeline {
   agent none
   stages {
-    stage('evaluacion2') {
-      agent any
-      environment {
-        hdnano = 'hdnano'
-      }
+    stage('evaluacion 2') {
       steps {
-        writeFile(file: 'login', text: 'prueba')
+        sleep 2
       }
     }
 

@@ -7,7 +7,7 @@ pipeline {
         hdnano = 'hdnano'
       }
       steps {
-        git(url: 'https://github.com/hdnano/login.git', changelog: true, poll: true)
+        writeFile(file: 'C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace', text: 'evaluacion')
       }
     }
 

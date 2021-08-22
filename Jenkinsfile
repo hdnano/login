@@ -8,7 +8,6 @@ pipeline {
       }
       steps {
         git(url: 'https://github.com/hdnano/login.git', branch: 'master', changelog: true)
-        echo 'carga con exito'
       }
     }
 
